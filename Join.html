@@ -30,8 +30,8 @@
     </div>
 
     <div>
-        <form  name="appForm" onsubmit="return validate()">
-            <fieldset>
+        <form  name="appForm" onsubmit="return validate()" action="club.php" method="post">
+        <fieldset>
                 <legend>Personal Information</legend>
                 <div class="form-group">
                     <label for="fullName">Full Name:</label>
@@ -53,7 +53,7 @@
                     <label for="email">Email Address:</label>
                     <input type="text" id="email" name="email">
                 </div>
-            </fieldset>
+            </fieldset> 
 
 
             <fieldset>
@@ -99,7 +99,7 @@
                         <label><input type="radio" name="bowlingStyle" value="leftSpin"> Left-arm Spin</label>
                     </div>
                 </div>
-            </fieldset>
+            </fieldset>   
 
 
             <fieldset>
@@ -132,7 +132,7 @@
                         <label><input type="checkbox" name="availability" value="weekendsAfternoon"> Weekends Afternoon</label>
                     </div>
                 </div>
-            </fieldset>
+            </fieldset> 
 
 
             <button type="submit" id="btn">Submit</button>
